@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YogAmrut Mushrooms</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms"></script>
+  <script src="https://cdn.jsdelivr.net/npm/framer-motion/dist/framer-motion.umd.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-green-700 to-green-500 text-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-3xl font-extrabold tracking-wide">🌱 YogAmrut Mushrooms</h1>
+      <nav class="space-x-6 text-lg">
+        <a href="#about" class="hover:text-yellow-300 transition">About</a>
+        <a href="#products" class="hover:text-yellow-300 transition">Products</a>
+        <a href="#contact" class="hover:text-yellow-300 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-green-100 py-24 text-center overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://source.unsplash.com/1600x900/?farm,mushroom')] bg-cover bg-center opacity-30"></div>
+    <div class="relative z-10">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">Grow Well, Eat Pure, Live Strong</h2>
+      <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-gray-800 font-medium drop-shadow">Fresh, organic, and nutritious mushrooms for a healthier lifestyle.</p>
+      <a href="#products" class="bg-yellow-400 text-green-900 px-8 py-4 rounded-full font-semibold shadow-md hover:bg-yellow-500 transition transform hover:scale-105">🍄 Explore Products</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-20 px-6">
+    <h3 class="text-4xl font-extrabold text-center mb-10 text-green-700">About Us</h3>
+    <p class="text-center max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
+      At <span class="font-semibold text-green-800">YogAmrut Mushrooms</span>, we are committed to sustainable farming and delivering the highest quality mushrooms. Our mission is to promote healthy eating while supporting eco-friendly agricultural practices.
+    </p>
+    <div class="grid md:grid-cols-3 gap-8 mt-12">
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-2xl transition">
+        <h4 class="text-2xl font-bold text-green-700 mb-2">🌿 Sustainability</h4>
+        <p>We use eco-friendly farming techniques to protect nature while producing nutritious food.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-2xl transition">
+        <h4 class="text-2xl font-bold text-green-700 mb-2">🍄 Quality</h4>
+        <p>Our mushrooms are organic, fresh, and handled with care from farm to table.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-2xl transition">
+        <h4 class="text-2xl font-bold text-green-700 mb-2">💚 Health</h4>
+        <p>Rich in protein and nutrients, our mushrooms support a healthy lifestyle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-extrabold text-center mb-14 text-green-700">Our Products</h3>
+      <div class="grid gap-10 md:grid-cols-3">
+        <!-- Product Card -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105">
+          <img src="https://source.unsplash.com/400x300/?oyster-mushroom" alt="Fresh Mushrooms" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-3 text-green-700">Fresh Oyster Mushrooms</h4>
+            <p class="text-gray-600 mb-4">Organically grown with pure taste and nutrition for your meals.</p>
+            <button class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition w-full">Buy Now</button>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105">
+          <img src="https://source.unsplash.com/400x300/?mushroom-powder" alt="Mushroom Powder" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-3 text-green-700">Mushroom Powder</h4>
+            <p class="text-gray-600 mb-4">Nutritious and protein-rich powder for health drinks and cooking.</p>
+            <button class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition w-full">Buy Now</button>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105">
+          <img src="https://source.unsplash.com/400x300/?farm,mushroom" alt="Mushroom Spawn" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-3 text-green-700">Mushroom Spawn</h4>
+            <p class="text-gray-600 mb-4">High-quality spawn for cultivation, ideal for farms and startups.</p>
+            <button class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition w-full">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gradient-to-r from-green-100 to-green-200 py-20">
+    <h3 class="text-4xl font-extrabold text-center mb-10 text-green-800">Contact Us</h3>
+    <div class="max-w-xl mx-auto bg-white p-10 rounded-2xl shadow-xl">
+      <form action="#" method="POST" class="space-y-5">
+        <input type="text" placeholder="Your Name" class="w-full p-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500">
+        <input type="email" placeholder="Your Email" class="w-full p-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500">
+        <textarea rows="4" placeholder="Your Message" class="w-full p-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500"></textarea>
+        <button class="bg-green-700 text-white px-8 py-4 rounded-full hover:bg-green-800 transition w-full shadow-md">Send Message</button>
+      </form>
+      <div class="text-center mt-8 text-gray-700">
+        <p class="mb-2">📧 <a href="mailto:dy76118865@gmail.com" class="text-green-700">dy76118865@gmail.com</a></p>
+        <p class="mb-2">📞 <a href="tel:+919370514126" class="text-green-700">+91 9370514126</a></p>
+        <p>📍 Pune, Maharashtra</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center py-8">
+    <p class="text-lg">&copy; 2025 YogAmrut Mushrooms | All rights reserved.</p>
+  </footer>
+</body>
+</html>
